@@ -1,5 +1,6 @@
 import React from 'react';
 import Head from 'next/head';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -24,7 +25,7 @@ export default function Home() {
               Das HRthis Frontend läuft jetzt auf Render.
             </p>
             
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
               <div className="bg-blue-50 p-6 rounded-lg">
                 <h3 className="text-lg font-semibold text-blue-800 mb-2">
                   Backend API
@@ -43,14 +44,22 @@ export default function Home() {
                 </p>
               </div>
             </div>
+
+            <Link href="/hr/app">
+              <button className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-6 rounded-lg transition-colors">
+                🏢 HR App öffnen
+              </button>
+            </Link>
           </div>
           
           <div className="text-sm text-gray-500">
-            <p>Nächste Schritte:</p>
+            <p>Features:</p>
             <ul className="mt-2 space-y-1">
-              <li>✅ Render Deployment</li>
-              <li>🔄 Backend anbinden</li>
-              <li>🔄 HR Components hinzufügen</li>
+              <li>✅ Mitarbeiter-Management</li>
+              <li>✅ Dashboard mit Statistiken</li>
+              <li>✅ Employee Cards</li>
+              <li>✅ Responsive Design</li>
+              <li>🔄 Backend Integration</li>
               <li>🔄 Browo AI Integration</li>
             </ul>
           </div>

@@ -1,6 +1,6 @@
 // Next.js
 import { type AppProps, type AppType } from "next/app";
-import { Geist } from "next/font/google";
+import { Inter } from "next/font/google";
 import { useRouter } from "next/router";
 
 // React
@@ -28,7 +28,7 @@ import { appWithTranslation } from "next-i18next";
 // State Management
 import { ReduxProvider } from "@/store/provider";
 
-const geist = Geist({
+const inter = Inter({
   subsets: ["latin"],
 });
 const queryClient = new QueryClient();
@@ -67,7 +67,7 @@ const MyApp: AppType = ({
   }, [router.events]);
 
   return (
-    <div className={geist.className}>
+    <div className={inter.className}>
       <SessionProvider session={session}>
         <ReduxProvider>
           <Toaster />

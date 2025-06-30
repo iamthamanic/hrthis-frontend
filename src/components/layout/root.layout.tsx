@@ -1,5 +1,3 @@
-import "../styles/style.css";
-
 type Props = {
   children: React.ReactNode;
 };

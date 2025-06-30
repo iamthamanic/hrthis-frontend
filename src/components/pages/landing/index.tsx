@@ -7,7 +7,6 @@ import { useTranslation } from "next-i18next";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import "./styles/style.css";
 import Link from "next/link";
 
 // Constants
